@@ -4,18 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jessica (Jiani) Luo</title>
-<meta name="description" content="Jessica (Jiani) Luo — Statistics and Business student at the University of Michigan researching operations management, marketplace design, and AI-driven platforms.">
+<meta name="description" content="Jessica (Jiani) Luo, Statistics student at the University of Michigan researching operations management, marketplace design, and AI and digital platforms.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#fbfaf7; --surface:#ffffff; --ink:#1d1f24; --muted:#5f6470; --faint:#e7e4dd;
+    --bg:#ffffff; --surface:#ffffff; --ink:#1d1f24; --muted:#5f6470; --faint:#e7e4dd;
     --accent:#00274c; --accent-2:#b8892b; --tag:#f2efe8;
     --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
-  }
-  @media (prefers-color-scheme:dark){
-    :root{--bg:#121417;--surface:#191c20;--ink:#e9e7e2;--muted:#9da2ad;--faint:#2a2e35;--accent:#9cc3ff;--accent-2:#e0b45a;--tag:#22262c;}
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -62,10 +59,18 @@
   .pill{padding:3px 10px;border-radius:999px;border:1px solid var(--faint);color:var(--muted)}
   .pill.status{border-color:var(--accent-2);color:var(--accent-2)}
   .abstract{margin-top:10px;color:var(--ink);font-size:15.5px}
-  .sub{font-family:var(--sans);font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin:30px 0 4px;font-weight:600}
-  .sub:first-of-type{margin-top:0}
+  .pubs{margin:8px 0 8px 22px;font-size:16.5px}
+  .pubs>li{padding:7px 0 7px 6px}
+  .pubs a{text-decoration:underline;border:0}
+  .pubs .ptitle{font-weight:600;color:var(--ink)}
+  .pubs ul{list-style:circle;margin:6px 0 0 22px;color:var(--muted);font-size:15.5px}
+  .pubs ul li{padding:2px 0}
+  .sub{font-family:var(--sans);font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:var(--accent);margin:30px 0 4px;font-weight:600;padding-bottom:6px;border-bottom:2px solid var(--accent-2);display:inline-block}
+  .pubs+.sub{margin-top:30px}
+  h2+.sub{margin-top:0}
 
-  .rows .row{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:12px 0}
+
+  .rows .row{display:grid;grid-template-columns:190px 1fr;gap:24px;padding:12px 0}
   .rows .when{color:var(--muted);font-size:14.5px}
   .rows .what strong{font-weight:600}
   .rows .what div{color:var(--muted);font-size:15px}
@@ -76,6 +81,8 @@
   .two li:last-child{border:0}
   .two li span{color:var(--muted)}
 
+  .email{margin-top:14px;font-size:14px;color:var(--muted)}
+  .rows .what div+div{margin-top:4px}
   footer{max-width:980px;margin:0 auto;padding:28px;color:var(--muted);font-size:13px;border-top:1px solid var(--faint)}
 
   @media (max-width:720px){
@@ -110,18 +117,17 @@
     <img class="portrait photo" src="photo.jpg" alt="Jessica Luo">
     <div>
       <h1>Jessica Luo <span class="cn">(Jiani)</span></h1>
-      <p class="role">Statistics (Honors) · University of Michigan, Ann Arbor</p>
+      <p class="role">B.S. in Statistics · University of Michigan, Ann Arbor</p>
       <div class="bio">
-        <p>I study how markets and platforms allocate scarce resources — and what happens when algorithms, incentives, and information shape those allocations. My work combines economic modeling with empirical evidence: I build models and test them in data, or start from an empirical puzzle and build the model that explains it.</p>
-        <p>Current projects span LLM-driven recommendation, the geography of childcare markets, and a teacher-incentive field experiment in Rwanda. I plan to pursue a PhD in operations management and an academic career.</p>
+        <p>Hi, I'm Jessica! I am an undergraduate student in Statistics at the University of Michigan, Ann Arbor. I work with Professors Jun Li and Stefanus Jasin in Technology and Operations at the Ross School of Business, and with collaborators at Arizona State University, Ohio State, and HKUST.</p>
+        <p>I am interested in how AI, incentives, and information shape decisions in markets and digital platforms. I like to start close to a market, learning what its participants want, what constrains them, and what each knows that the others do not, and then abstract the mechanism into a model or an empirical framework. In practice, that means building models and testing them with data, or starting from an empirical pattern and building the model that explains it.</p>
+        <p>I am currently applying to PhD programs in operations management.</p>
       </div>
       <div class="contact" id="contact">
-        <a class="btn primary" href="mailto:your-email@umich.edu">Email</a>
+        <a class="btn primary" href="mailto:jessia@umich.edu">Email</a>
         <a class="btn" href="cv.pdf">CV</a>
-        <a class="btn" href="https://scholar.google.com/">Google Scholar</a>
-        <a class="btn" href="https://github.com/">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/">LinkedIn</a>
       </div>
+      <p class="email">jessia [at] umich [dot] edu</p>
     </div>
   </header>
 
@@ -129,11 +135,9 @@
     <h2><span class="num">01</span>Research Interests</h2>
     <div class="interests">
       <span>Technology &amp; Operations Management</span>
-      <span>Empirical Operations Management</span>
-      <span>Marketplace Design &amp; Pricing</span>
-      <span>AI &amp; Digital Platforms</span>
+      <span>Marketplace Design and Pricing</span>
+      <span>AI and Digital Platforms</span>
       <span>Data-Driven Operations</span>
-      <span>Field Experiments</span>
     </div>
   </section>
 
@@ -141,66 +145,48 @@
     <h2><span class="num">02</span>Research</h2>
 
     <p class="sub">Working Papers</p>
-
-    <article class="paper">
-      <h3>Position-Driven Allocation by LLM Recommenders</h3>
-      <p class="authors">with Stefanus Jasin, Jane Jiang, and Zijie Zhou</p>
-      <div class="meta"><span class="pill status">Working paper</span><span class="pill">LLMs</span><span class="pill">Recommender systems</span><span class="pill">Choice modeling</span></div>
-      <p class="abstract">When large language models recommend products, where an item appears in the list can matter as much as what it is. We treat LLM position bias as an allocation mechanism: using a multinomial-logit framework, we show when recommenders lean on position rather than attributes, and run controlled experiments that measure how position reliance shifts demand — and consumer value — across sellers.</p>
-    </article>
-
-    <article class="paper">
-      <h3>Having It All? Childcare Market Entry and the Geography of Childcare Deserts</h3>
-      <p class="authors">with Jun Li and coauthors</p>
-      <div class="meta"><span class="pill status">Working paper</span><span class="pill">Market entry</span><span class="pill">Public policy</span><span class="pill">Spatial data</span></div>
-      <p class="abstract">Why do childcare deserts form, and where? We develop a two-stage entry and pricing model that links parents' labor supply to providers' staffing costs, calibrate it to U.S. census and establishment data, and map childcare supply across rural, suburban, and urban markets. The model suggests subsidy design should differ by geography — supporting families in rural areas and providers in dense cities.</p>
-    </article>
+    <ol class="pubs">
+      <li>
+        <span class="ptitle">&ldquo;Position-Driven Allocation by LLM Recommenders,&rdquo;</span> <a href="position-driven-allocation.pdf">[PDF]</a>, with Stefanus Jasin, Jane Jiang, and Zijie Zhou.
+        <ul><li>Submitted to WINE 2026</li></ul>
+      </li>
+      <li>
+        <span class="ptitle">&ldquo;Lottery-Based Performance Pay: Evidence from a Field Experiment in Rwanda,&rdquo;</span> with Mahyar Eftekhar and Jun Li.
+        <ul><li>Presented at INFORMS Annual Meeting 2026</li></ul>
+      </li>
+    </ol>
 
     <p class="sub">Work in Progress</p>
-
-    <article class="paper">
-      <h3>Teacher Incentives and Student Learning: A Field Experiment in Rwanda</h3>
-      <p class="authors">with Mahyar Eftekhar and Jun Li · Arizona State University &amp; University of Michigan, in partnership with NABU</p>
-      <div class="meta"><span class="pill status">Field experiment</span><span class="pill">Incentive design</span><span class="pill">Education</span><span class="pill">INFORMS Annual Meeting 2026</span></div>
-      <p class="abstract">A randomized evaluation comparing a collective class-fund incentive with an individual teacher bonus across primary schools in Rwanda. I lead data cleaning and analysis, partner coordination in the field, and the design of the teacher survey used to study mechanisms.</p>
-    </article>
-
-    <article class="paper">
-      <h3>Information Asymmetry in U.S. Childcare Markets</h3>
-      <p class="authors">with Jun Li</p>
-      <div class="meta"><span class="pill status">In progress</span><span class="pill">Quality ratings</span><span class="pill">Information design</span></div>
-      <p class="abstract">How do quality rating and improvement systems (QRIS) and subsidy rules shape what parents can learn about providers? We assemble a 50-state database of QRIS and subsidy policies to study how information gaps affect childcare choice and market outcomes.</p>
-    </article>
+    <ol class="pubs">
+      <li><span class="ptitle">&ldquo;Childcare Market Entry and the Geography of Childcare Deserts,&rdquo;</span> with Jun Li.</li>
+      <li><span class="ptitle">&ldquo;LLM Inference Scheduling Optimization,&rdquo;</span> with Zijie Zhou.</li>
+    </ol>
   </section>
 
   <section id="education">
     <h2><span class="num">03</span>Education</h2>
     <div class="rows">
       <div class="row">
-        <div class="when">University of Michigan</div>
-        <div class="what"><strong>B.S. in Statistics (Honors)</strong><div>College of Literature, Science, and the Arts</div></div>
-      </div>
-      <div class="row">
-        <div class="when">University of Michigan</div>
-        <div class="what"><strong>B.B.A., Business Administration</strong><div>Ross School of Business</div></div>
+        <div class="when">Sep 2023 to Dec 2026</div>
+        <div class="what"><strong>University of Michigan, Ann Arbor</strong>
+          <div>B.S. in Statistics · GPA 3.91/4.0</div>
+          <div>Honors: Sophomore Honors Award, James B. Angell Scholar</div>
+          <div>Selected coursework: Regression Analysis (graduate), Probability Theory (graduate), Linear Programming I (graduate), Statistical Theory, Bayesian Data Analysis, Convex Optimization, Online Optimization, Stochastic Processes</div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="experience">
-    <h2><span class="num">04</span>Research Experience</h2>
+    <h2><span class="num">04</span>Other Research Experience</h2>
     <div class="rows">
       <div class="row">
-        <div class="when">Oct 2025 – present</div>
-        <div class="what"><strong>Co-author, Ross School of Business</strong><div>Childcare markets and the Rwanda teacher-incentive experiment, with Prof. Jun Li and Prof. Mahyar Eftekhar</div></div>
+        <div class="when">Jan 2025 to Jun 2025</div>
+        <div class="what"><strong>Undergraduate Research Program in Statistics, University of Michigan</strong><div>Research Assistant to Prof. Ji Zhu. Generative models for cold-start link prediction in network data.</div></div>
       </div>
       <div class="row">
-        <div class="when">Jun 2025 – present</div>
-        <div class="what"><strong>Co-author, Ross School of Business</strong><div>LLM position bias in product recommendation, with Prof. Stefanus Jasin</div></div>
-      </div>
-      <div class="row">
-        <div class="when">Oct 2023 – May 2024</div>
-        <div class="what"><strong>Research Assistant, Michigan Global Feminism Project</strong><div>Podcast interviews and teaching-archive materials</div></div>
+        <div class="when">Oct 2023 to May 2024</div>
+        <div class="what"><strong>Michigan Global Feminism Project</strong><div>Research Assistant. Podcast interviews and teaching-archive materials.</div></div>
       </div>
     </div>
   </section>
@@ -209,23 +195,21 @@
     <h2><span class="num">05</span>Skills &amp; Languages</h2>
     <div class="two">
       <ul>
-        <li>Python <span>— data pipelines, econometrics, LLM experiments</span></li>
-        <li>Stata <span>— regression analysis</span></li>
-        <li>LaTeX <span>— papers, tables, slides</span></li>
-        <li>Methods <span>— choice models, conditional logit, field experiments</span></li>
+        <li>Programming <span>Python, R, Stata, MATLAB, C++</span></li>
+        <li>Tools <span>LaTeX, Tableau</span></li>
+        <li>AI <span>Fine-tuning, RAG, agent harnesses</span></li>
       </ul>
       <ul>
-        <li>Swiss German <span>— native</span></li>
-        <li>Mandarin Chinese <span>— native</span></li>
-        <li>English <span>— fluent</span></li>
-        <li>French <span>— basic</span></li>
+        <li>Swiss German, Chinese <span>Native</span></li>
+        <li>German, English <span>Fluent</span></li>
+        <li>French <span>Working knowledge</span></li>
       </ul>
     </div>
   </section>
 
   <section>
     <h2><span class="num">06</span>Beyond Research</h2>
-    <p>I grew up in Switzerland and am an accredited pianist who has performed on television in Switzerland and China. Before research, I founded a small cake brand — an early lesson in how hard it is to get pricing and marketing right. I also ski whenever I can.</p>
+    <p>Outside of research, I am an accredited classical pianist and have performed on national television in Switzerland and China. I love alpine skiing, golf, and baking, and I have traveled to more than 20 countries, sharing travel and food vlogs along the way.</p>
   </section>
 
 </main>
